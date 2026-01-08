@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>October Rust - Type O Negative</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Oswald:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-lightbox/2.14.2/simple-lightbox.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { gothic: ['Cinzel', 'serif'], sans: ['Oswald', 'sans-serif'] },
+                    colors: { ton: { green: '#2ecc71', darkGreen: '#1b4d3e', black: '#0a0a0a', gray: '#1a1a1a' } }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { background-color: #0a0a0a; color: #e0e0e0; }
+        .ton-text-glow { text-shadow: 0 0 10px rgba(46, 204, 113, 0.6); }
+        .track-list li:hover { color: #2ecc71; transform: translateX(10px); transition: all 0.3s; }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col font-sans">
+
+    <nav class="sticky top-0 z-50 bg-black/90 border-b-2 border-ton-green p-4">
+        <div class="container mx-auto flex flex-wrap justify-between items-center">
+            <a href="index.html" class="font-gothic text-2xl text-ton-green ton-text-glow tracking-tighter">TYPE O NEGATIVE</a>
+            <div class="flex flex-wrap gap-4 text-sm uppercase tracking-widest font-bold">
+                <a href="historia.html" class="nav-link">Historia</a>
+                <a href="dyskografia.html" class="text-ton-green nav-link">Dyskografia</a>
+                <a href="sklad.html" class="nav-link">Skład</a>
+                <a href="teledyski.html" class="nav-link">Teledyski</a>
+                <a href="koncerty.html" class="nav-link">Koncerty</a>
+                <a href="tv.html" class="nav-link">TV</a>
+                <a href="ksiazki.html" class="nav-link">Książki</a>
+                <a href="ciekawostki.html" class="nav-link">Ciekawostki</a>
+                <a href="partnerzy.html" class="nav-link">Partnerzy</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container mx-auto px-4 py-12 flex-grow">
+        <div class="flex flex-col md:flex-row gap-12">
+            <div class="md:w-1/3">
+                <div class="border-4 border-ton-green p-1 sticky top-24">
+                    <img src="/img/okladki/4.jpg" alt="October Rust" class="w-full grayscale">
+                </div>
+                <div class="mt-6">
+                    <a href="https://open.spotify.com/album/48I1Ym5C9m0T1YhXm6W9X9V" target="_blank" class="flex items-center justify-center gap-2 bg-ton-green text-black py-3 font-bold hover:bg-white transition uppercase tracking-widest">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.494 17.306c-.215.353-.674.464-1.026.249-2.822-1.723-6.375-2.112-10.559-1.157-.404.092-.813-.16-.905-.565-.092-.404.16-.813.565-.905 4.584-1.048 8.513-.604 11.676 1.328.353.216.463.675.249 1.028v.022zm1.464-3.264c-.27.439-.845.581-1.285.311-3.23-1.984-8.155-2.558-11.975-1.398-.497.151-1.024-.132-1.175-.629-.151-.497.132-1.024.629-1.175 4.368-1.326 9.789-.684 13.513 1.606.44.27.581.845.311 1.285h.082zm.126-3.41c-3.873-2.3-10.274-2.513-13.984-1.387-.594.18-1.229-.158-1.409-.752-.18-.594.158-1.229.752-1.409 4.263-1.294 11.332-1.037 15.795 1.612.534.317.708 1.008.391 1.542-.317.534-1.008.708-1.542.392l-.003.002z"/></svg>
+                        Spotify
+                    </a>
+                </div>
+            </div>
+            <div class="md:w-2/3">
+                <h1 class="font-gothic text-6xl text-ton-green mb-2 ton-text-glow uppercase">October Rust</h1>
+                <p class="text-2xl text-gray-500 font-gothic mb-8 tracking-widest">Wydany: 1996</p>
+                
+                <div class="bg-ton-gray p-8 border border-gray-800">
+                    <h3 class="font-gothic text-3xl text-ton-green mb-6 border-b border-ton-green/30 pb-2">Lista utworów:</h3>
+                    <ol class="track-list space-y-4 font-gothic text-xl">
+                        <li class="flex items-center gap-4">
+                            <span class="text-ton-green font-bold">01.</span> Bad Ground
+                        </li>
+                        <li class="flex items-center gap-4">
+                            <span class="text-ton-green font-bold">02.</span> [Untitled]
+                        </li>
+                        <li class="flex items-center gap-4">
+                            <span class="text-ton-green font-bold">03.</span> Love You to Death
+                        </li>
+                        <li class="flex items-center gap-4">
+                            <span class="text-ton-green font-bold">04.</span> Be My Druidess
+                        </li>
+                        <li class="flex items-center gap-4">
+                            <span class="text-ton-green font-bold">05.</span> Green Man
+                        </li>
+                        <li class="flex items-center gap-4">
+                            <span class="text-ton-green font-bold">06.</span> Red Water (Christmas Mourning)
+                        </li>
+                        <li class="flex items-center gap-4">
+                            <span class="text-ton-green font-bold">07.</span> My Girlfriend's Girlfriend
+                        </li>
+                        <li class="flex items-center gap-4">
+                            <span class="text-ton-green font-bold">08.</span> Die With Me
+                        </li>
+                        <li class="flex items-center gap-4">
+                            <span class="text-ton-green font-bold">09.</span> Burnt Flowers Fallen
+                        </li>
+                        <li class="flex items-center gap-4">
+                            <span class="text-ton-green font-bold">10.</span> In Praise of Bacchus
+                        </li>
+                        <li class="flex items-center gap-4">
+                            <span class="text-ton-green font-bold">11.</span> Cinnamon Girl
+                        </li>
+                        <li class="flex items-center gap-4">
+                            <span class="text-ton-green font-bold">12.</span> The Glorious Liberation of the People's Technocratic Republic of Vinnland by the Combined Forces of the United Territories of Europa
+                        </li>
+                        <li class="flex items-center gap-4">
+                            <span class="text-ton-green font-bold">13.</span> Wolf Moon (Including Zoanthropic Paranoia)
+                        </li>
+                        <li class="flex items-center gap-4">
+                            <span class="text-ton-green font-bold">14.</span> Haunted
+                        </li>
+                        <li class="flex items-center gap-4">
+                            <span class="text-ton-green font-bold">15.</span> [Untitled]
+                        </li>
+                    </ol>
+                </div>
+
+                <div class="mt-8 prose prose-invert max-w-none text-gray-400">
+                    <p>
+                        "October Rust" to album, który jeszcze bardziej udoskonalił brzmienie z "Bloody Kisses", stając się dla wielu kwintesencją stylu Type O Negative. Pełen romantycznych ballad i ciężkich, doomowych riffów, zanurzony w jesiennym, melancholijnym nastroju.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <section class="mt-20">
+            <h2 class="font-gothic text-3xl text-ton-green mb-8 text-center uppercase tracking-widest">Galeria albumu</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 gallery">
+                <a href="https://picsum.photos/seed/or1/1200/800" class="aspect-square bg-ton-gray border border-ton-green/30 hover:border-ton-green transition cursor-pointer overflow-hidden">
+                    <img src="https://picsum.photos/seed/or1/400/400" alt="October Rust 1" class="w-full h-full object-cover grayscale">
+                </a>
+                <a href="https://picsum.photos/seed/or2/1200/800" class="aspect-square bg-ton-gray border border-ton-green/30 hover:border-ton-green transition cursor-pointer overflow-hidden">
+                    <img src="https://picsum.photos/seed/or2/400/400" alt="October Rust 2" class="w-full h-full object-cover grayscale">
+                </a>
+                <a href="https://picsum.photos/seed/or3/1200/800" class="aspect-square bg-ton-gray border border-ton-green/30 hover:border-ton-green transition cursor-pointer overflow-hidden">
+                    <img src="https://picsum.photos/seed/or3/400/400" alt="October Rust 3" class="w-full h-full object-cover grayscale">
+                </a>
+                <a href="https://picsum.photos/seed/or4/1200/800" class="aspect-square bg-ton-gray border border-ton-green/30 hover:border-ton-green transition cursor-pointer overflow-hidden">
+                    <img src="https://picsum.photos/seed/or4/400/400" alt="October Rust 4" class="w-full h-full object-cover grayscale">
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-black border-t-2 border-ton-green p-8 mt-12">
+        <div class="container mx-auto text-center">
+            <p class="text-ton-green font-gothic mb-2">TYPE O NEGATIVE - STAY NEGATIVE</p>
+            <p class="text-sm text-gray-500">
+                Wykonanie strony: <a href="https://typeonegative.netlify.app" class="hover:text-ton-green underline transition">Piotr G.</a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/simple-lightbox/2.14.2/simple-lightbox.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var gallery = new SimpleLightbox('.gallery a', { /* options */ });
+        });
+    </script>
+
+</body>
+</html>

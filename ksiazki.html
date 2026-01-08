@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Książki - Type O Negative</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Oswald:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-lightbox/2.14.2/simple-lightbox.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { gothic: ['Cinzel', 'serif'], sans: ['Oswald', 'sans-serif'] },
+                    colors: { ton: { green: '#2ecc71', darkGreen: '#1b4d3e', black: '#0a0a0a', gray: '#1a1a1a' } }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { background-color: #0a0a0a; color: #e0e0e0; }
+        .ton-text-glow { text-shadow: 0 0 10px rgba(46, 204, 113, 0.6); }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col font-sans">
+
+    <nav class="sticky top-0 z-50 bg-black/90 border-b-2 border-ton-green p-4">
+        <div class="container mx-auto flex flex-wrap justify-between items-center">
+            <a href="index.html" class="font-gothic text-2xl text-ton-green ton-text-glow tracking-tighter">TYPE O NEGATIVE</a>
+            <div class="flex flex-wrap gap-4 text-sm uppercase tracking-widest font-bold">
+                <a href="historia.html" class="nav-link">Historia</a>
+                <a href="dyskografia.html" class="nav-link">Dyskografia</a>
+                <a href="sklad.html" class="nav-link">Skład</a>
+                <a href="teledyski.html" class="nav-link">Teledyski</a>
+                <a href="koncerty.html" class="nav-link">Koncerty</a>
+                <a href="tv.html" class="nav-link">TV</a>
+                <a href="ksiazki.html" class="text-ton-green nav-link">Książki</a>
+                <a href="ciekawostki.html" class="nav-link">Ciekawostki</a>
+                <a href="partnerzy.html" class="nav-link">Partnerzy</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container mx-auto px-4 py-12 flex-grow">
+        <h1 class="font-gothic text-5xl text-ton-green mb-12 border-b-2 border-ton-green pb-4 ton-text-glow">KSIĄŻKI O ZESPOLE</h1>
+        
+        <div class="space-y-12">
+            <!-- Book 1 -->
+            <div class="flex flex-col md:flex-row gap-8 bg-ton-gray border border-ton-green/30 p-8">
+                <div class="md:w-1/4">
+                    <img src="https://picsum.photos/seed/book1/400/600" alt="Soul on Fire" class="w-full grayscale border border-ton-green">
+                </div>
+                <div class="md:w-3/4">
+                    <h3 class="font-gothic text-3xl text-ton-green mb-2">Soul on Fire: The Life and Music of Peter Steele</h3>
+                    <p class="text-gray-500 mb-4 italic">Autor: Jeff Wagner</p>
+                    <p class="text-lg text-gray-300 leading-relaxed">
+                        To najbardziej kompleksowa i jedyna autoryzowana biografia lidera Type O Negative. Jeff Wagner zagłębia się w skomplikowaną osobowość Petera Steele'a, opisując jego dzieciństwo, początki w Carnivore, wielki sukces z TON oraz osobiste demony, z którymi walczył do końca życia. Książka zawiera liczne wywiady z członkami rodziny i muzykami.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Book 2 -->
+            <div class="flex flex-col md:flex-row gap-8 bg-ton-gray border border-ton-green/30 p-8">
+                <div class="md:w-1/4">
+                    <img src="https://picsum.photos/seed/book2/400/600" alt="Iron Fist of Brooklyn" class="w-full grayscale border border-ton-green">
+                </div>
+                <div class="md:w-3/4">
+                    <h3 class="font-gothic text-3xl text-ton-green mb-2">Type O Negative: The Drab Four</h3>
+                    <p class="text-gray-500 mb-4 italic">Fanziny i publikacje pamiątkowe</p>
+                    <p class="text-lg text-gray-300 leading-relaxed">
+                        Istnieje wiele mniejszych publikacji, fanzinów i albumów fotograficznych, które dokumentują trasę koncertowe zespołu. Fani z całego świata tworzą własne zbiory wspomnień, które celebrują specyficzny humor i estetykę zespołu z Brooklynu.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="bg-black border-t-2 border-ton-green p-8 mt-12">
+        <div class="container mx-auto text-center">
+            <p class="text-ton-green font-gothic mb-2">TYPE O NEGATIVE - STAY NEGATIVE</p>
+            <p class="text-sm text-gray-500">
+                Wykonanie strony: <a href="https://typeonegative.netlify.app" class="hover:text-ton-green underline transition">Piotr G.</a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/simple-lightbox/2.14.2/simple-lightbox.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var gallery = new SimpleLightbox('.gallery a', { /* options */ });
+        });
+    </script>
+
+</body>
+</html>

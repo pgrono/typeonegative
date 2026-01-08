@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dyskografia - Type O Negative</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Oswald:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-lightbox/2.14.2/simple-lightbox.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { gothic: ['Cinzel', 'serif'], sans: ['Oswald', 'sans-serif'] },
+                    colors: { ton: { green: '#2ecc71', darkGreen: '#1b4d3e', black: '#0a0a0a', gray: '#1a1a1a' } }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { background-color: #0a0a0a; color: #e0e0e0; }
+        .ton-text-glow { text-shadow: 0 0 10px rgba(46, 204, 113, 0.6); }
+        .album-card:hover { border-color: #2ecc71; transform: translateY(-5px); transition: all 0.3s; }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col font-sans">
+
+    <nav class="sticky top-0 z-50 bg-black/90 border-b-2 border-ton-green p-4">
+        <div class="container mx-auto flex flex-wrap justify-between items-center">
+            <a href="index.html" class="font-gothic text-2xl text-ton-green ton-text-glow tracking-tighter">TYPE O NEGATIVE</a>
+            <div class="flex flex-wrap gap-4 text-sm uppercase tracking-widest font-bold">
+                <a href="historia.html" class="nav-link">Historia</a>
+                <a href="dyskografia.html" class="text-ton-green nav-link">Dyskografia</a>
+                <a href="sklad.html" class="nav-link">Skład</a>
+                <a href="teledyski.html" class="nav-link">Teledyski</a>
+                <a href="koncerty.html" class="nav-link">Koncerty</a>
+                <a href="tv.html" class="nav-link">TV</a>
+                <a href="ksiazki.html" class="nav-link">Książki</a>
+                <a href="ciekawostki.html" class="nav-link">Ciekawostki</a>
+                <a href="partnerzy.html" class="nav-link">Partnerzy</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container mx-auto px-4 py-12 flex-grow">
+        <h1 class="font-gothic text-5xl text-ton-green mb-12 border-b-2 border-ton-green pb-4 ton-text-glow">DYSKOGRAFIA STUDYJNA</h1>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Album 1 -->
+            <a href="slow-deep-and-hard.html" class="album-card border border-gray-800 bg-ton-gray p-6 flex flex-col items-center text-center">
+                <img src="https://picsum.photos/seed/ton_alb1/300/300" alt="Slow, Deep and Hard" class="w-64 h-64 object-cover mb-4 grayscale">
+                <h3 class="font-gothic text-2xl text-ton-green">Slow, Deep and Hard</h3>
+                <p class="text-gray-500 mb-2">1991</p>
+                <span class="font-bold uppercase text-xs tracking-widest text-ton-green hover:underline">Zobacz tracklistę</span>
+            </a>
+            <!-- Album 2 -->
+            <a href="the-origin-of-the-feces.html" class="album-card border border-gray-800 bg-ton-gray p-6 flex flex-col items-center text-center">
+                <img src="/img/okladki/2.jpg" alt="The Origin of the Feces" class="w-64 h-64 object-cover mb-4 grayscale">
+                <h3 class="font-gothic text-2xl text-ton-green">The Origin of the Feces</h3>
+                <p class="text-gray-500 mb-2">1992</p>
+                <span class="font-bold uppercase text-xs tracking-widest text-ton-green hover:underline">Zobacz tracklistę</span>
+            </a>
+            <!-- Album 3 -->
+            <a href="bloody-kisses.html" class="album-card border border-gray-800 bg-ton-gray p-6 flex flex-col items-center text-center border-ton-green border-2">
+                <img src="/img/okladki/3.jpg" alt="Bloody Kisses" class="w-64 h-64 object-cover mb-4 grayscale">
+                <h3 class="font-gothic text-2xl text-ton-green">Bloody Kisses</h3>
+                <p class="text-gray-500 mb-2">1993</p>
+                <span class="font-bold uppercase text-xs tracking-widest text-ton-green hover:underline">Zobacz tracklistę</span>
+            </a>
+            <!-- Album 4 -->
+            <a href="october-rust.html" class="album-card border border-gray-800 bg-ton-gray p-6 flex flex-col items-center text-center">
+                <img src="/img/okladki/4.jpg" alt="October Rust" class="w-64 h-64 object-cover mb-4 grayscale">
+                <h3 class="font-gothic text-2xl text-ton-green">October Rust</h3>
+                <p class="text-gray-500 mb-2">1996</p>
+                <span class="font-bold uppercase text-xs tracking-widest text-ton-green hover:underline">Zobacz tracklistę</span>
+            </a>
+            <!-- Album 5 -->
+            <a href="world-coming-down.html" class="album-card border border-gray-800 bg-ton-gray p-6 flex flex-col items-center text-center">
+                <img src="/img/okladki/5.jpg" alt="World Coming Down" class="w-64 h-64 object-cover mb-4 grayscale">
+                <h3 class="font-gothic text-2xl text-ton-green">World Coming Down</h3>
+                <p class="text-gray-500 mb-2">1999</p>
+                <span class="font-bold uppercase text-xs tracking-widest text-ton-green hover:underline">Zobacz tracklistę</span>
+            </a>
+            <!-- Album 6 -->
+            <a href="life-is-killing-me.html" class="album-card border border-gray-800 bg-ton-gray p-6 flex flex-col items-center text-center">
+                <img src="/img/okladki/6.jpg" alt="Life Is Killing Me" class="w-64 h-64 object-cover mb-4 grayscale">
+                <h3 class="font-gothic text-2xl text-ton-green">Life Is Killing Me</h3>
+                <p class="text-gray-500 mb-2">2003</p>
+                <span class="font-bold uppercase text-xs tracking-widest text-ton-green hover:underline">Zobacz tracklistę</span>
+            </a>
+            <!-- Album 7 -->
+            <a href="dead-again.html" class="album-card border border-gray-800 bg-ton-gray p-6 flex flex-col items-center text-center">
+                <img src="/img/okladki/7.jpg" alt="Dead Again" class="w-64 h-64 object-cover mb-4 grayscale">
+                <h3 class="font-gothic text-2xl text-ton-green">Dead Again</h3>
+                <p class="text-gray-500 mb-2">2007</p>
+                <span class="font-bold uppercase text-xs tracking-widest text-ton-green hover:underline">Zobacz tracklistę</span>
+            </a>
+        </div>
+    </main>
+
+    <footer class="bg-black border-t-2 border-ton-green p-8 mt-12">
+        <div class="container mx-auto text-center">
+            <p class="text-ton-green font-gothic mb-2">TYPE O NEGATIVE - STAY NEGATIVE</p>
+            <p class="text-sm text-gray-500">
+                Wykonanie strony: <a href="https://typeonegative.netlify.app" class="hover:text-ton-green underline transition">Piotr G.</a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/simple-lightbox/2.14.2/simple-lightbox.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var gallery = new SimpleLightbox('.gallery a', { /* options */ });
+        });
+    </script>
+
+</body>
+</html>

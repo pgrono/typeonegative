@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Type O Negative - Fanpage</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Oswald:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-lightbox/2.14.2/simple-lightbox.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        gothic: ['Cinzel', 'serif'],
+                        sans: ['Oswald', 'sans-serif'],
+                    },
+                    colors: {
+                        ton: {
+                            green: '#2ecc71',
+                            darkGreen: '#1b4d3e',
+                            black: '#0a0a0a',
+                            gray: '#1a1a1a',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { background-color: #0a0a0a; color: #e0e0e0; }
+        .ton-border { border-color: #2ecc71; }
+        .ton-text-glow { text-shadow: 0 0 10px rgba(46, 204, 113, 0.6); }
+        .nav-link:hover { color: #2ecc71; text-shadow: 0 0 5px #2ecc71; }
+        .bg-vignette {
+            background: radial-gradient(circle, rgba(27,77,62,0.2) 0%, rgba(10,10,10,1) 80%);
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col font-sans">
+
+    <!-- Navigation -->
+    <nav class="sticky top-0 z-50 bg-black/90 border-b-2 border-ton-green p-4">
+        <div class="container mx-auto flex flex-wrap justify-between items-center">
+            <a href="index.html" class="font-gothic text-2xl text-ton-green ton-text-glow tracking-tighter">TYPE O NEGATIVE</a>
+            <div class="flex flex-wrap gap-4 text-sm uppercase tracking-widest font-bold">
+                <a href="historia.html" class="nav-link">Historia</a>
+                <a href="dyskografia.html" class="nav-link">Dyskografia</a>
+                <a href="sklad.html" class="nav-link">Skład</a>
+                <a href="teledyski.html" class="nav-link">Teledyski</a>
+                <a href="koncerty.html" class="nav-link">Koncerty</a>
+                <a href="tv.html" class="nav-link">TV</a>
+                <a href="ksiazki.html" class="nav-link">Książki</a>
+                <a href="ciekawostki.html" class="nav-link">Ciekawostki</a>
+                <a href="partnerzy.html" class="nav-link">Partnerzy</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="relative h-[60vh] flex items-center justify-center overflow-hidden bg-vignette">
+        <div class="relative z-10 text-center px-4">
+            <h1 class="font-gothic text-6xl md:text-8xl text-ton-green mb-4 ton-text-glow animate-pulse">NONE MORE NEGATIVE</h1>
+            <p class="text-xl md:text-2xl tracking-[0.3em] uppercase opacity-80">The Drab Four from Brooklyn</p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-12 flex-grow">
+        
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+            <div>
+                <h2 class="font-gothic text-4xl text-ton-green mb-6 border-b border-ton-green pb-2">Witaj w świecie zieleni i mroku</h2>
+                <p class="text-lg leading-relaxed mb-6 text-gray-300">
+                    Type O Negative to nie tylko zespół – to styl życia, specyficzne poczucie humoru i unikalne brzmienie, 
+                    które połączyło doom metal, gothic rock i hardcore punk w jedną, nierozerwalną całość. 
+                    Założony w 1989 roku w Brooklynie, pod wodzą charyzmatycznego Petera Steele'a, 
+                    zespół stał się legendą, której dziedzictwo trwa do dziś.
+                </p>
+                <div class="flex gap-4">
+                    <a href="historia.html" class="bg-ton-green text-black px-6 py-2 font-bold hover:bg-white transition">Poznaj Historię</a>
+                    <a href="sklad.html" class="border border-ton-green text-ton-green px-6 py-2 font-bold hover:bg-ton-green hover:text-black transition">Zobacz Skład</a>
+                </div>
+            </div>
+            <div class="border-4 border-ton-green p-2 rotate-1 shadow-[0_0_15px_rgba(0,255,65,0.2)]">
+                <img src="/img/zespol/main.jpg" alt="Type O Negative Style" class="w-full grayscale">
+            </div>
+        </div>
+
+        <!-- Gallery Section -->
+        <section class="mt-20">
+            <h2 class="font-gothic text-3xl text-ton-green mb-8 text-center uppercase tracking-widest">Galeria</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 gallery">
+                <a href="img/zespol/01.jpg" class="aspect-square bg-ton-gray border border-ton-green/30 hover:border-ton-green transition cursor-pointer overflow-hidden">
+                    <img src="img/zespol/01.jpg" alt="Type O Negative 01" class="w-full h-full object-cover grayscale hover:grayscale-0 transition duration-500">
+                </a>
+                <a href="img/zespol/02.jpg" class="aspect-square bg-ton-gray border border-ton-green/30 hover:border-ton-green transition cursor-pointer overflow-hidden">
+                    <img src="img/zespol/02.jpg" alt="Type O Negative 02" class="w-full h-full object-cover grayscale hover:grayscale-0 transition duration-500">
+                </a>
+                <a href="img/zespol/03.jpg" class="aspect-square bg-ton-gray border border-ton-green/30 hover:border-ton-green transition cursor-pointer overflow-hidden">
+                    <img src="img/zespol/03.jpg" alt="Type O Negative 03" class="w-full h-full object-cover grayscale hover:grayscale-0 transition duration-500">
+                </a>
+                <a href="img/zespol/04.jpg" class="aspect-square bg-ton-gray border border-ton-green/30 hover:border-ton-green transition cursor-pointer overflow-hidden">
+                    <img src="img/zespol/04.jpg" alt="Type O Negative 04" class="w-full h-full object-cover grayscale hover:grayscale-0 transition duration-500">
+                </a>
+                <a href="img/zespol/05.jpg" class="aspect-square bg-ton-gray border border-ton-green/30 hover:border-ton-green transition cursor-pointer overflow-hidden">
+                    <img src="img/zespol/05.jpg" alt="Type O Negative 05" class="w-full h-full object-cover grayscale hover:grayscale-0 transition duration-500">
+                </a>
+                <a href="img/zespol/06.jpg" class="aspect-square bg-ton-gray border border-ton-green/30 hover:border-ton-green transition cursor-pointer overflow-hidden">
+                    <img src="img/zespol/06.jpg" alt="Type O Negative 06" class="w-full h-full object-cover grayscale hover:grayscale-0 transition duration-500">
+                </a>
+                <a href="img/zespol/main.jpg" class="aspect-square bg-ton-gray border border-ton-green/30 hover:border-ton-green transition cursor-pointer overflow-hidden">
+                    <img src="img/zespol/main.jpg" alt="Type O Negative Main" class="w-full h-full object-cover grayscale hover:grayscale-0 transition duration-500">
+                </a>
+                <a href="img/zespol/history.jpg" class="aspect-square bg-ton-gray border border-ton-green/30 hover:border-ton-green transition cursor-pointer overflow-hidden">
+                    <img src="img/zespol/history.jpg" alt="Type O Negative History" class="w-full h-full object-cover grayscale hover:grayscale-0 transition duration-500">
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-black border-t-2 border-ton-green p-8 mt-12">
+        <div class="container mx-auto text-center">
+            <p class="text-ton-green font-gothic mb-2">TYPE O NEGATIVE - STAY NEGATIVE</p>
+            <p class="text-sm text-gray-500">
+                Wykonanie strony: <a href="https://typeonegative.netlify.app" class="hover:text-ton-green underline transition">Piotr G.</a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/simple-lightbox/2.14.2/simple-lightbox.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var gallery = new SimpleLightbox('.gallery a', { /* options */ });
+        });
+    </script>
+
+</body>
+</html>

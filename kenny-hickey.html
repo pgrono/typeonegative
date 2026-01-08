@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kenny Hickey - Type O Negative</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Oswald:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-lightbox/2.14.2/simple-lightbox.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { gothic: ['Cinzel', 'serif'], sans: ['Oswald', 'sans-serif'] },
+                    colors: { ton: { green: '#2ecc71', darkGreen: '#1b4d3e', black: '#0a0a0a', gray: '#1a1a1a' } }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { background-color: #0a0a0a; color: #e0e0e0; }
+        .ton-text-glow { text-shadow: 0 0 10px rgba(46, 204, 113, 0.6); }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col font-sans">
+
+    <nav class="sticky top-0 z-50 bg-black/90 border-b-2 border-ton-green p-4">
+        <div class="container mx-auto flex flex-wrap justify-between items-center">
+            <a href="index.html" class="font-gothic text-2xl text-ton-green ton-text-glow tracking-tighter">TYPE O NEGATIVE</a>
+            <div class="flex flex-wrap gap-4 text-sm uppercase tracking-widest font-bold">
+                <a href="historia.html" class="nav-link">Historia</a>
+                <a href="dyskografia.html" class="nav-link">Dyskografia</a>
+                <a href="sklad.html" class="text-ton-green nav-link">Skład</a>
+                <a href="teledyski.html" class="nav-link">Teledyski</a>
+                <a href="koncerty.html" class="nav-link">Koncerty</a>
+                <a href="tv.html" class="nav-link">TV</a>
+                <a href="ksiazki.html" class="nav-link">Książki</a>
+                <a href="ciekawostki.html" class="nav-link">Ciekawostki</a>
+                <a href="partnerzy.html" class="nav-link">Partnerzy</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container mx-auto px-4 py-12 flex-grow">
+        <div class="flex flex-col md:flex-row gap-12">
+            <div class="md:w-1/3">
+                <div class="border-4 border-ton-green p-1 sticky top-24">
+                    <img src="https://picsum.photos/seed/kenny_bio/600/900" alt="Kenny Hickey" class="w-full grayscale">
+                </div>
+            </div>
+            <div class="md:w-2/3">
+                <h1 class="font-gothic text-6xl text-ton-green mb-2 ton-text-glow">KENNY HICKEY</h1>
+                <p class="text-2xl text-gray-500 font-gothic mb-8 tracking-widest">GITARA, WOKAL WSPOMAGAJĄCY</p>
+                
+                <div class="prose prose-invert prose-ton max-w-none text-lg leading-relaxed space-y-6">
+                    <p>
+                        Kenny Hickey, współzałożyciel Type O Negative, jest odpowiedzialny za charakterystyczne, ciężkie i nastrojowe riffy gitary, które stały się znakiem rozpoznawczym zespołu. Jego styl gry idealnie uzupełniał głęboki bas Petera Steele'a.
+                    </p>
+                    <p>
+                        Oprócz gry na gitarze, Kenny często udzielał się wokalnie, tworząc harmonie lub śpiewając główne partie w niektórych utworach (np. "September Sun"). Jego energia sceniczna i poczucie humoru były kluczowym elementem tożsamości "The Drab Four".
+                    </p>
+                    <p>
+                        Po zakończeniu działalności Type O Negative, Kenny kontynuował karierę w takich zespołach jak Seventh Void czy Silvertomb, pozostając wiernym ciężkiemu, doom-metalowemu brzmieniu.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <section class="mt-20">
+            <h2 class="font-gothic text-3xl text-ton-green mb-8 text-center uppercase tracking-widest">Galeria - Kenny Hickey</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 gallery">
+                <a href="https://picsum.photos/seed/k1/1200/800" class="aspect-square bg-ton-gray border border-ton-green/30 hover:border-ton-green transition cursor-pointer overflow-hidden">
+                    <img src="https://picsum.photos/seed/k1/400/400" alt="Kenny 1" class="w-full h-full object-cover grayscale">
+                </a>
+                <a href="https://picsum.photos/seed/k2/1200/800" class="aspect-square bg-ton-gray border border-ton-green/30 hover:border-ton-green transition cursor-pointer overflow-hidden">
+                    <img src="https://picsum.photos/seed/k2/400/400" alt="Kenny 2" class="w-full h-full object-cover grayscale">
+                </a>
+                <a href="https://picsum.photos/seed/k3/1200/800" class="aspect-square bg-ton-gray border border-ton-green/30 hover:border-ton-green transition cursor-pointer overflow-hidden">
+                    <img src="https://picsum.photos/seed/k3/400/400" alt="Kenny 3" class="w-full h-full object-cover grayscale">
+                </a>
+                <a href="https://picsum.photos/seed/k4/1200/800" class="aspect-square bg-ton-gray border border-ton-green/30 hover:border-ton-green transition cursor-pointer overflow-hidden">
+                    <img src="https://picsum.photos/seed/k4/400/400" alt="Kenny 4" class="w-full h-full object-cover grayscale">
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-black border-t-2 border-ton-green p-8 mt-12">
+        <div class="container mx-auto text-center">
+            <p class="text-ton-green font-gothic mb-2">TYPE O NEGATIVE - STAY NEGATIVE</p>
+            <p class="text-sm text-gray-500">
+                Wykonanie strony: <a href="https://typeonegative.netlify.app" class="hover:text-ton-green underline transition">Piotr G.</a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/simple-lightbox/2.14.2/simple-lightbox.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var gallery = new SimpleLightbox('.gallery a', { /* options */ });
+        });
+    </script>
+
+</body>
+</html>

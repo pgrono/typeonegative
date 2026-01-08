@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historia - Type O Negative</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Oswald:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-lightbox/2.14.2/simple-lightbox.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { gothic: ['Cinzel', 'serif'], sans: ['Oswald', 'sans-serif'] },
+                    colors: { ton: { green: '#2ecc71', darkGreen: '#1b4d3e', black: '#0a0a0a', gray: '#1a1a1a' } }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { background-color: #0a0a0a; color: #e0e0e0; }
+        .ton-text-glow { text-shadow: 0 0 10px rgba(46, 204, 113, 0.6); }
+        .nav-link { transition: all 0.3s; }
+        .nav-link:hover { color: #2ecc71; text-shadow: 0 0 5px #2ecc71; }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col font-sans">
+
+    <nav class="sticky top-0 z-50 bg-black/90 border-b-2 border-ton-green p-4">
+        <div class="container mx-auto flex flex-wrap justify-between items-center">
+            <a href="index.html" class="font-gothic text-2xl text-ton-green ton-text-glow tracking-tighter">TYPE O NEGATIVE</a>
+            <div class="flex flex-wrap gap-4 text-sm uppercase tracking-widest font-bold">
+                <a href="historia.html" class="text-ton-green nav-link">Historia</a>
+                <a href="dyskografia.html" class="nav-link">Dyskografia</a>
+                <a href="sklad.html" class="nav-link">Skład</a>
+                <a href="teledyski.html" class="nav-link">Teledyski</a>
+                <a href="koncerty.html" class="nav-link">Koncerty</a>
+                <a href="tv.html" class="nav-link">TV</a>
+                <a href="ksiazki.html" class="nav-link">Książki</a>
+                <a href="ciekawostki.html" class="nav-link">Ciekawostki</a>
+                <a href="partnerzy.html" class="nav-link">Partnerzy</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container mx-auto px-4 py-12 flex-grow">
+        <h1 class="font-gothic text-5xl text-ton-green mb-12 border-b-2 border-ton-green pb-4 ton-text-glow">HISTORIA ZESPOŁU</h1>
+        
+        <div class="space-y-12 text-lg text-gray-300 leading-relaxed">
+            <section class="grid md:grid-cols-2 gap-8 items-start">
+                <div>
+                    <h2 class="font-gothic text-3xl text-ton-green mb-4">Początki: Z popiołów Carnivore</h2>
+                    <p class="mb-4">
+                        Zespół powstał w 1989 roku na Brooklynie w Nowym Jorku. Po rozpadzie thrash/hardcore'owej formacji Carnivore, Peter Steele połączył siły ze swoimi przyjaciółmi z dzieciństwa: Joshem Silverem, Kennym Hickeyem i Salem Abruscato. Początkowo grupa nazywała się "Repulsion", a później "Sub-Zero", by ostatecznie przyjąć nazwę Type O Negative – nawiązującą do rzadkiej grupy krwi, co idealnie wpasowało się w ich mroczny wizerunek.
+                    </p>
+                </div>
+                <div class="border border-ton-green p-1">
+                    <img src="/img/zespol/history.jpg" alt="Early days" class="w-full grayscale brightness-75">
+                </div>
+            </section>
+
+            <section>
+                <h2 class="font-gothic text-3xl text-ton-green mb-4">Era Bloody Kisses i przełom</h2>
+                <p class="mb-4">
+                    Po kontrowersyjnym debiucie "Slow, Deep and Hard" i pseudo-koncertowym "The Origin of the Feces", zespół wydał w 1993 roku album "Bloody Kisses". To właśnie to wydawnictwo stało się pierwszą złotą (a później platynową) płytą w historii wytwórni Roadrunner Records. Utwory takie jak "Christian Woman" i "Black No. 1 (Little Miss Scare-All)" stały się hymnami subkultury gotyckiej, choć zespół zawsze podchodził do swojej "mroczności" z ogromnym dystansem i ironią.
+                </p>
+            </section>
+
+            <section class="bg-ton-gray p-8 border-l-4 border-ton-green">
+                <h2 class="font-gothic text-3xl text-ton-green mb-4">Ostatnie lata i dziedzictwo</h2>
+                <p>
+                    Kolejne albumy, od "October Rust" po ostatni "Dead Again" z 2007 roku, ugruntowały pozycję zespołu jako mistrzów nastroju, łączących ciężkie riffy z melodyjnością The Beatles. Nagła śmierć Petera Steele'a 14 kwietnia 2010 roku położyła kres działalności grupy. Członkowie zespołu zgodnie uznali, że Type O Negative nie może istnieć bez swojego lidera.
+                </p>
+            </section>
+        </div>
+
+        <section class="mt-20">
+            <h2 class="font-gothic text-3xl text-ton-green mb-8 text-center uppercase tracking-widest">Galeria</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 gallery">
+                <a href="https://picsum.photos/seed/tonh1/1200/800" class="aspect-square bg-ton-gray border border-ton-green/30 hover:border-ton-green transition cursor-pointer overflow-hidden">
+                    <img src="https://picsum.photos/seed/tonh1/400/400" alt="History 1" class="w-full h-full object-cover grayscale">
+                </a>
+                <a href="https://picsum.photos/seed/tonh2/1200/800" class="aspect-square bg-ton-gray border border-ton-green/30 hover:border-ton-green transition cursor-pointer overflow-hidden">
+                    <img src="https://picsum.photos/seed/tonh2/400/400" alt="History 2" class="w-full h-full object-cover grayscale">
+                </a>
+                <a href="https://picsum.photos/seed/tonh3/1200/800" class="aspect-square bg-ton-gray border border-ton-green/30 hover:border-ton-green transition cursor-pointer overflow-hidden">
+                    <img src="https://picsum.photos/seed/tonh3/400/400" alt="History 3" class="w-full h-full object-cover grayscale">
+                </a>
+                <a href="https://picsum.photos/seed/tonh4/1200/800" class="aspect-square bg-ton-gray border border-ton-green/30 hover:border-ton-green transition cursor-pointer overflow-hidden">
+                    <img src="https://picsum.photos/seed/tonh4/400/400" alt="History 4" class="w-full h-full object-cover grayscale">
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-black border-t-2 border-ton-green p-8 mt-12">
+        <div class="container mx-auto text-center">
+            <p class="text-ton-green font-gothic mb-2">TYPE O NEGATIVE - STAY NEGATIVE</p>
+            <p class="text-sm text-gray-500">
+                Wykonanie strony: <a href="https://strony.olsztyn.pl/" class="hover:text-ton-green underline transition">Piotr G.</a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/simple-lightbox/2.14.2/simple-lightbox.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var gallery = new SimpleLightbox('.gallery a', { /* options */ });
+        });
+    </script>
+
+</body>
+</html>
