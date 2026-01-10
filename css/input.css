@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body { 
+    @apply bg-[#0a0a0a] text-[#e0e0e0] font-sans; 
+  }
+}
+
+@layer components {
+  .ton-border { @apply border-[#2ecc71]; }
+  .ton-text-glow { text-shadow: 0 0 10px rgba(46, 204, 113, 0.6); }
+  .nav-link { @apply hover:text-[#2ecc71] transition duration-300; }
+  .nav-link:hover { text-shadow: 0 0 5px #2ecc71; }
+  .bg-vignette {
+    background: radial-gradient(circle, rgba(27,77,62,0.2) 0%, rgba(10,10,10,1) 80%);
+  }
+}
