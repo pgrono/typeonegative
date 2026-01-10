@@ -1,7 +1,7 @@
 {
   "name": "typeonegative",
   "version": "1.0.0",
-  "description": "Nieoficjalna polska strona poświęcona legendarnemu zespołowi **Type O Negative** i pamięci **Petera Steele'a**. Projekt typu *tribute site*, zbierający najważniejsze informacje o zespole w jednym, mrocznym i zielonym miejscu.",
+  "description": "Nieoficjalna polska strona poświęcona legendarnemu zespołowi **Type O Negative** i pamięci **Petera Steele'a**.",
   "main": "index.js",
   "scripts": {
     "build": "tailwindcss -i ./css/input.css -o ./css/style.css --minify",
@@ -11,9 +11,8 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@tailwindcss/cli": "^4.1.18",
-    "autoprefixer": "^10.4.23",
-    "postcss": "^8.5.6",
-    "tailwindcss": "^4.1.18"
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.49",
+    "tailwindcss": "^3.4.17"
   }
 }
