@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://typeonegative.nsv.pl/sitemap.xml
