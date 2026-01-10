@@ -4,8 +4,8 @@
   "description": "Nieoficjalna polska strona poświęcona legendarnemu zespołowi **Type O Negative** i pamięci **Petera Steele'a**. Projekt typu *tribute site*, zbierający najważniejsze informacje o zespole w jednym, mrocznym i zielonym miejscu.",
   "main": "index.js",
   "scripts": {
-    "build": "npx tailwindcss -i ./css/input.css -o ./css/style.css --minify",
-    "watch": "npx tailwindcss -i ./css/input.css -o ./css/style.css --watch"
+    "build": "tailwindcss -i ./css/input.css -o ./css/style.css --minify",
+    "watch": "tailwindcss -i ./css/input.css -o ./css/style.css --watch"
   },
   "keywords": [],
   "author": "",
