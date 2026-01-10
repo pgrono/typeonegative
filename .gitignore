@@ -1,0 +1,21 @@
+# Zależności
+node_modules/
+.pnp
+.pnp.js
+
+# Logi
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Pliki systemowe
+.DS_Store
+Thumbs.db
+
+# Pliki lokalne wrangler / Cloudflare
+.wrangler/
+dist/
+.dev.vars
+
+# Wygenerowane style (opcjonalnie, jeśli budujesz je na Cloudflare)
+# css/style.css
