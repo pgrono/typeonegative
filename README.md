@@ -18,7 +18,7 @@ Strona została stworzona dla fanów "The Drab Four", aby zapewnić łatwy dost�
 
 ## 🛠️ Technologie
 *   **HTML5**
-*   **Tailwind CSS** (via CDN)
+*   **Tailwind CSS**
 *   **JavaScript** (SimpleLightbox)
 *   **Cloudflare Pages** (Hosting & Deployment)
 
