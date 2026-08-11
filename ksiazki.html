@@ -5,10 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="canonical" href="https://typeonegative.nsv.pl/ksiazki">
     <title>Książki - Type O Negative</title>
+    <meta name="description" content="Książki poświęcone Type O Negative i Peterowi Steele’owi wraz z krótkimi opisami oraz odnośnikami do zakupu.">
     <link href="/css/style.css" rel="stylesheet">
     <link rel="icon" type="image/png" sizes="512x512" href="/img/favicon.png">
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Oswald:wght@300;400;700&display=swap" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.14.2/simple-lightbox.min.css" rel="stylesheet">
+    <link rel="preload" href="/fonts/cinzel-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/fonts/cinzel-latin-ext.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/fonts/oswald-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/fonts/oswald-latin-ext.woff2" as="font" type="font/woff2" crossorigin>
     
     <style>
         body { background-color: #0a0a0a; color: #e0e0e0; }
@@ -41,10 +44,10 @@
             <!-- Book 1 -->
             <div class="flex flex-col md:flex-row gap-8 bg-ton-gray border border-ton-green/30 p-8">
                 <div class="md:w-1/4">
-                    <img src="/img/okladki/book1.jpg" alt="Soul on Fire" class="w-full grayscale border border-ton-green">
+                    <img src="/img/okladki/book1.jpg" width="352" height="500" alt="Soul on Fire" fetchpriority="high" class="w-full grayscale border border-ton-green">
                 </div>
                 <div class="md:w-3/4">
-                    <h3 class="font-gothic text-3xl text-ton-green mb-2">Soul on Fire: The Life and Music of Peter Steele</h3>
+                    <h2 class="font-gothic text-3xl text-ton-green mb-2">Soul on Fire: The Life and Music of Peter Steele</h2>
                     <p class="text-gray-500 mb-4 italic">Autor: Jeff Wagner</p>
                     <p class="text-lg text-gray-300 leading-relaxed">
                         To najbardziej kompleksowa i jedyna autoryzowana biografia lidera Type O Negative. Jeff Wagner zagłębia się w skomplikowaną osobowość Petera Steele'a, opisując jego dzieciństwo, początki w Carnivore, wielki sukces z TON oraz osobiste demony, z którymi walczył do końca życia. Książka zawiera liczne wywiady z członkami rodziny i muzykami.
@@ -55,10 +58,10 @@
             <!-- Book 2 -->
             <div class="flex flex-col md:flex-row gap-8 bg-ton-gray border border-ton-green/30 p-8">
                 <div class="md:w-1/4">
-                    <img src="/img/okladki/zgnila-zielen.jpg" alt="Okładka książki Zgniła Zieleń – historia Carnivore i Type O Negative" loading="lazy" class="w-full grayscale border border-ton-green">
+                    <img src="/img/okladki/zgnila-zielen.jpg" width="352" height="500" alt="Okładka książki Zgniła Zieleń – historia Carnivore i Type O Negative" loading="lazy" decoding="async" class="w-full grayscale border border-ton-green">
                 </div>
                 <div class="md:w-3/4">
-                    <h3 class="font-gothic text-3xl text-ton-green mb-2">Zgniła Zieleń – historia Carnivore i Type O Negative</h3>
+                    <h2 class="font-gothic text-3xl text-ton-green mb-2">Zgniła Zieleń – historia Carnivore i Type O Negative</h2>
                     <p class="text-gray-500 mb-4 italic">Autor: Maciej Krzywiński</p>
                     <p class="text-lg text-gray-300 leading-relaxed">
                         Polskojęzyczna opowieść o drodze Petera Steele’a od nowojorskiego Carnivore do Type O Negative. Maciej Krzywiński łączy historię zespołów z analizami albumów, kulisami nagrań i tras oraz wspomnieniami muzyków, współpracowników i bliskich, pokazując, jak życie lidera przenikało do jego twórczości.
@@ -72,10 +75,10 @@
             <!-- Book 3 -->
             <div class="flex flex-col md:flex-row gap-8 bg-ton-gray border border-ton-green/30 p-8">
                 <div class="md:w-1/4">
-                    <img src="/img/okladki/piotr-wielki-i-reszta.jpg" alt="Okładka książki Type O Negative. Piotr Wielki i reszta" loading="lazy" class="w-full grayscale border border-ton-green">
+                    <img src="/img/okladki/piotr-wielki-i-reszta.jpg" width="349" height="500" alt="Okładka książki Type O Negative. Piotr Wielki i reszta" loading="lazy" decoding="async" class="w-full grayscale border border-ton-green">
                 </div>
                 <div class="md:w-3/4">
-                    <h3 class="font-gothic text-3xl text-ton-green mb-2">Type O Negative. Piotr Wielki i reszta</h3>
+                    <h2 class="font-gothic text-3xl text-ton-green mb-2">Type O Negative. Piotr Wielki i reszta</h2>
                     <p class="text-gray-500 mb-4 italic">Autor: Tomasz Jeleniewski</p>
                     <p class="text-lg text-gray-300 leading-relaxed">
                         Polska książka przedstawiająca dzieje Type O Negative i sylwetkę Petera Steele’a, uzupełniona omówieniem dorobku zespołu. Tomasz Jeleniewski prowadzi czytelnika przez kolejne etapy działalności grupy, a część dyskograficzna obejmuje albumy, single i wydawnictwa promocyjne.
@@ -92,18 +95,11 @@
     <footer class="bg-black border-t-2 border-ton-green p-8 mt-12">
         <div class="container mx-auto text-center">
             <p class="text-ton-green font-gothic mb-2">TYPE O NEGATIVE - STAY NEGATIVE</p>
-            <p class="text-sm text-gray-500">
+            <p class="text-sm text-gray-400">
                 Cold. Green. Eternal. Type O Negative — Peter Steele Site crafted by <a href="https://strony.olsztyn.pl" class="hover:text-ton-green underline transition">Piotr G.</a>
             </p>
         </div>
     </footer>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.14.2/simple-lightbox.min.js"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            var gallery = new SimpleLightbox('.gallery a', { /* options */ });
-        });
-    </script>
 
 </body>
 </html>

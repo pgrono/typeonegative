@@ -5,10 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="canonical" href="https://typeonegative.nsv.pl/ciekawostki">
     <title>Ciekawostki - Type O Negative</title>
+    <meta name="description" content="Ciekawostki dotyczące Type O Negative i twórczości zespołu na nieoficjalnym polskim fanpage’u.">
     <link href="/css/style.css" rel="stylesheet">
     <link rel="icon" type="image/png" sizes="512x512" href="/img/favicon.png">
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Oswald:wght@300;400;700&display=swap" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.14.2/simple-lightbox.min.css" rel="stylesheet">
+    <link rel="preload" href="/fonts/cinzel-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/fonts/cinzel-latin-ext.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/fonts/oswald-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/fonts/oswald-latin-ext.woff2" as="font" type="font/woff2" crossorigin>
     
     <style>
         body { background-color: #0a0a0a; color: #e0e0e0; }
@@ -39,28 +42,28 @@
         
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div class="bg-ton-gray p-8 border-l-4 border-ton-green">
-                <h3 class="font-gothic text-2xl text-ton-green mb-4">The Drab Four</h3>
+                <h2 class="font-gothic text-2xl text-ton-green mb-4">The Drab Four</h2>
                 <p class="text-gray-300">
                     Zespół często nazywał siebie "The Drab Four" (Ponura Czwórka), co było ironicznym nawiązaniem do przydomka The Beatles – "The Fab Four" (Fantastyczna Czwórka). Peter Steele był ogromnym fanem Beatlesów, co słychać w wielu harmoniach wokalnych zespołu.
                 </p>
             </div>
 
             <div class="bg-ton-gray p-8 border-l-4 border-ton-green">
-                <h3 class="font-gothic text-2xl text-ton-green mb-4">Playgirl i Peter Steele</h3>
+                <h2 class="font-gothic text-2xl text-ton-green mb-4">Playgirl i Peter Steele</h2>
                 <p class="text-gray-300">
                     W 1995 roku Peter Steele pojawił się na rozkładówce magazynu "Playgirl". Później, w swoim stylu, skomentował to z sarkazmem, twierdząc, że żałuje tej decyzji, bo "tylko faceci kupowali ten numer, żeby zobaczyć jak duży jest mój... bas".
                 </p>
             </div>
 
             <div class="bg-ton-gray p-8 border-l-4 border-ton-green">
-                <h3 class="font-gothic text-2xl text-ton-green mb-4">Zielony to jedyny kolor</h3>
+                <h2 class="font-gothic text-2xl text-ton-green mb-4">Zielony to jedyny kolor</h2>
                 <p class="text-gray-300">
                     Zieleń była wszędzie – od oświetlenia scenicznego, przez okładki płyt, aż po instrumenty. Peter Steele sam malował swój sprzęt na ten konkretny odcień zieleni. Zespół do tego stopnia pilnował swojej estetyki, że nawet ich bus koncertowy musiał mieć zielone elementy.
                 </p>
             </div>
 
             <div class="bg-ton-gray p-8 border-l-4 border-ton-green">
-                <h3 class="font-gothic text-2xl text-ton-green mb-4">Żart o śmierci w 2005</h3>
+                <h2 class="font-gothic text-2xl text-ton-green mb-4">Żart o śmierci w 2005</h2>
                 <p class="text-gray-300">
                     W 2005 roku na stronie zespołu pojawiło się zdjęcie nagrobka z napisem "Peter Steele 1962–2005". Fani byli przerażeni, a okazało się to kolejnym ponurym żartem zespołu, który miał zwiastować... podpisanie kontraktu z nową wytwórnią. Niestety, pięć lat później żart stał się rzeczywistością.
                 </p>
@@ -71,18 +74,11 @@
     <footer class="bg-black border-t-2 border-ton-green p-8 mt-12">
         <div class="container mx-auto text-center">
             <p class="text-ton-green font-gothic mb-2">TYPE O NEGATIVE - STAY NEGATIVE</p>
-            <p class="text-sm text-gray-500">
+            <p class="text-sm text-gray-400">
                 Cold. Green. Eternal. Type O Negative — Peter Steele Site crafted by <a href="https://strony.olsztyn.pl" class="hover:text-ton-green underline transition">Piotr G.</a>
             </p>
         </div>
     </footer>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.14.2/simple-lightbox.min.js"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            var gallery = new SimpleLightbox('.gallery a', { /* options */ });
-        });
-    </script>
 
 </body>
 </html>

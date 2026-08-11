@@ -5,10 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="canonical" href="https://typeonegative.nsv.pl/historia">
     <title>Historia - Type O Negative</title>
+    <meta name="description" content="Historia zespołu Type O Negative przedstawiona na nieoficjalnym polskim fanpage’u poświęconym jego muzyce i dziedzictwu.">
     <link href="/css/style.css" rel="stylesheet">
     <link rel="icon" type="image/png" sizes="512x512" href="/img/favicon.png">
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Oswald:wght@300;400;700&display=swap" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.14.2/simple-lightbox.min.css" rel="stylesheet">
+    <link rel="preload" href="/fonts/cinzel-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/fonts/cinzel-latin-ext.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/fonts/oswald-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/fonts/oswald-latin-ext.woff2" as="font" type="font/woff2" crossorigin>
     
     <style>
         body { background-color: #0a0a0a; color: #e0e0e0; }
@@ -48,7 +51,7 @@
                     </p>
                 </div>
                 <div class="border border-ton-green p-1">
-                    <img src="/img/zespol/history.jpg" alt="Early days" class="w-full grayscale brightness-75">
+                    <img src="/img/zespol/history.jpg" width="592" height="515" alt="Early days" fetchpriority="high" class="w-full grayscale brightness-75">
                 </div>
             </section>
 
@@ -72,18 +75,11 @@
     <footer class="bg-black border-t-2 border-ton-green p-8 mt-12">
         <div class="container mx-auto text-center">
             <p class="text-ton-green font-gothic mb-2">TYPE O NEGATIVE - STAY NEGATIVE</p>
-            <p class="text-sm text-gray-500">
+            <p class="text-sm text-gray-400">
                 Cold. Green. Eternal. Type O Negative — Peter Steele Site crafted by <a href="https://strony.olsztyn.pl" class="hover:text-ton-green underline transition">Piotr G.</a>
             </p>
         </div>
     </footer>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.14.2/simple-lightbox.min.js"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            var gallery = new SimpleLightbox('.gallery a', { /* options */ });
-        });
-    </script>
 
 </body>
 </html>

@@ -5,9 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="canonical" href="https://typeonegative.nsv.pl/sklad">
     <title>Skład - Type O Negative</title>
+    <meta name="description" content="Skład Type O Negative: członkowie zespołu, ich role oraz galeria zdjęć na nieoficjalnym polskim fanpage’u.">
     <link href="/css/style.css" rel="stylesheet">
     <link rel="icon" type="image/png" sizes="512x512" href="/img/favicon.png">
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Oswald:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="preload" href="/fonts/cinzel-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/fonts/cinzel-latin-ext.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/fonts/oswald-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/fonts/oswald-latin-ext.woff2" as="font" type="font/woff2" crossorigin>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.14.2/simple-lightbox.min.css" rel="stylesheet">
     
     <style>
@@ -42,10 +46,10 @@
             <!-- Peter Steele -->
             <a href="peter-steele" class="member-card group block bg-ton-gray border border-gray-800 overflow-hidden relative">
                 <div class="aspect-[3/4] overflow-hidden">
-                    <img src="/img/peter.jpg" alt="Peter Steele" class="w-full h-full object-cover grayscale transition duration-500">
+                    <img src="/img/peter.jpg" width="736" height="933" alt="Peter Steele" fetchpriority="high" class="w-full h-full object-cover grayscale transition duration-500">
                 </div>
                 <div class="p-6">
-                    <h3 class="font-gothic text-3xl text-ton-green group-hover:ton-text-glow transition">Peter Steele</h3>
+                    <h2 class="font-gothic text-3xl text-ton-green group-hover:ton-text-glow transition">Peter Steele</h2>
                     <p class="text-gray-400 uppercase tracking-widest text-sm">Wokal, Bas</p>
                 </div>
             </a>
@@ -53,10 +57,10 @@
             <!-- Kenny Hickey -->
             <a href="kenny-hickey" class="member-card group block bg-ton-gray border border-gray-800 overflow-hidden relative">
                 <div class="aspect-[3/4] overflow-hidden">
-                    <img src="/img/kenny-hickey.jpg" alt="Kenny Hickey podczas koncertu" class="w-full h-full object-cover grayscale transition duration-500">
+                    <img src="/img/kenny-hickey.jpg" width="960" height="1441" alt="Kenny Hickey podczas koncertu" loading="lazy" decoding="async" class="w-full h-full object-cover grayscale transition duration-500">
                 </div>
                 <div class="p-6">
-                    <h3 class="font-gothic text-3xl text-ton-green group-hover:ton-text-glow transition">Kenny Hickey</h3>
+                    <h2 class="font-gothic text-3xl text-ton-green group-hover:ton-text-glow transition">Kenny Hickey</h2>
                     <p class="text-gray-400 uppercase tracking-widest text-sm">Gitara, Wokal wspomagający</p>
                 </div>
             </a>
@@ -64,10 +68,10 @@
             <!-- Josh Silver -->
             <a href="josh-silver" class="member-card group block bg-ton-gray border border-gray-800 overflow-hidden relative">
                 <div class="aspect-[3/4] overflow-hidden">
-                    <img src="/img/josh-silver.jpg" alt="Josh Silver podczas koncertu" class="w-full h-full object-cover grayscale transition duration-500">
+                    <img src="/img/josh-silver.jpg" width="960" height="720" alt="Josh Silver podczas koncertu" loading="lazy" decoding="async" class="w-full h-full object-cover grayscale transition duration-500">
                 </div>
                 <div class="p-6">
-                    <h3 class="font-gothic text-3xl text-ton-green group-hover:ton-text-glow transition">Josh Silver</h3>
+                    <h2 class="font-gothic text-3xl text-ton-green group-hover:ton-text-glow transition">Josh Silver</h2>
                     <p class="text-gray-400 uppercase tracking-widest text-sm">Klawisze, Produkcja</p>
                 </div>
             </a>
@@ -75,27 +79,27 @@
             <!-- Johnny Kelly -->
             <a href="johnny-kelly" class="member-card group block bg-ton-gray border border-gray-800 overflow-hidden relative">
                 <div class="aspect-[3/4] overflow-hidden">
-                    <img src="/img/johnny.jpg" alt="Johnny Kelly" class="w-full h-full object-cover grayscale transition duration-500">
+                    <img src="/img/johnny.jpg" width="736" height="761" alt="Johnny Kelly" loading="lazy" decoding="async" class="w-full h-full object-cover grayscale transition duration-500">
                 </div>
                 <div class="p-6">
-                    <h3 class="font-gothic text-3xl text-ton-green group-hover:ton-text-glow transition">Johnny Kelly</h3>
+                    <h2 class="font-gothic text-3xl text-ton-green group-hover:ton-text-glow transition">Johnny Kelly</h2>
                     <p class="text-gray-400 uppercase tracking-widest text-sm">Perkusja</p>
                 </div>
             </a>
 
             <!-- Sal Abruscato -->
-            <a href="sal-abruscato" class="member-card group block bg-ton-gray border border-gray-800 overflow-hidden relative opacity-70">
+            <a href="sal-abruscato" class="member-card group block bg-ton-gray border border-gray-800 overflow-hidden relative">
                 <div class="aspect-[3/4] overflow-hidden">
-                    <img src="/img/sal-abruscato.jpg" alt="Sal Abruscato podczas koncertu" class="w-full h-full object-cover grayscale transition duration-500">
+                    <img src="/img/sal-abruscato.jpg" width="960" height="1440" alt="Sal Abruscato podczas koncertu" loading="lazy" decoding="async" class="w-full h-full object-cover grayscale transition duration-500">
                 </div>
                 <div class="p-6">
-                    <h3 class="font-gothic text-2xl text-ton-green group-hover:ton-text-glow transition">Sal Abruscato</h3>
+                    <h2 class="font-gothic text-2xl text-ton-green group-hover:ton-text-glow transition">Sal Abruscato</h2>
                     <p class="text-gray-400 uppercase tracking-widest text-sm">Perkusja (1989–1993)</p>
                 </div>
             </a>
         </div>
 
-        <aside aria-label="Źródła zdjęć członków zespołu" class="mt-6 text-xs text-gray-500 leading-relaxed">
+        <aside aria-label="Źródła zdjęć członków zespołu" class="mt-6 text-xs text-gray-400 leading-relaxed">
             Zdjęcia:
             Kenny Hickey — <a href="https://commons.wikimedia.org/wiki/File:Kenny_Hickey_2007.jpg" target="_blank" rel="noopener noreferrer" class="text-ton-green hover:underline focus:outline-none focus:ring-2 focus:ring-ton-green">Bizu / Wikimedia Commons</a>, domena publiczna;
             Josh Silver — <a href="https://commons.wikimedia.org/wiki/File:Josh_Silver.jpg" target="_blank" rel="noopener noreferrer" class="text-ton-green hover:underline focus:outline-none focus:ring-2 focus:ring-ton-green">MarkScottAustinTX / Wikimedia Commons</a>, <a href="https://creativecommons.org/licenses/by-sa/2.0/" target="_blank" rel="noopener noreferrer" class="text-ton-green hover:underline focus:outline-none focus:ring-2 focus:ring-ton-green">CC BY-SA 2.0</a>;
@@ -106,22 +110,22 @@
             <h2 class="font-gothic text-3xl text-ton-green mb-8 text-center uppercase tracking-widest">Galeria Składu</h2>
             <div class="grid grid-cols-2 md:grid-cols-3 gap-4 gallery">
                 <a href="/img/zespol/01.jpg" class="aspect-square bg-ton-gray border border-ton-green/30 hover:border-ton-green transition cursor-pointer overflow-hidden">
-                    <img src="/img/zespol/01.jpg" alt="Portret zespołu Type O Negative" loading="lazy" class="w-full h-full object-cover grayscale">
+                    <img src="/img/zespol/01.jpg" width="1403" height="900" alt="Portret zespołu Type O Negative" loading="lazy" decoding="async" class="w-full h-full object-cover grayscale">
                 </a>
                 <a href="/img/zespol/02.jpg" class="aspect-square bg-ton-gray border border-ton-green/30 hover:border-ton-green transition cursor-pointer overflow-hidden">
-                    <img src="/img/zespol/02.jpg" alt="Type O Negative w skórzanych kurtkach" loading="lazy" class="w-full h-full object-cover grayscale">
+                    <img src="/img/zespol/02.jpg" width="500" height="436" alt="Type O Negative w skórzanych kurtkach" loading="lazy" decoding="async" class="w-full h-full object-cover grayscale">
                 </a>
                 <a href="/img/zespol/03.jpg" class="aspect-square bg-ton-gray border border-ton-green/30 hover:border-ton-green transition cursor-pointer overflow-hidden">
-                    <img src="/img/zespol/03.jpg" alt="Studyjne zdjęcie zespołu Type O Negative" loading="lazy" class="w-full h-full object-cover grayscale">
+                    <img src="/img/zespol/03.jpg" width="496" height="750" alt="Studyjne zdjęcie zespołu Type O Negative" loading="lazy" decoding="async" class="w-full h-full object-cover grayscale">
                 </a>
                 <a href="/img/zespol/04.jpg" class="aspect-square bg-ton-gray border border-ton-green/30 hover:border-ton-green transition cursor-pointer overflow-hidden">
-                    <img src="/img/zespol/04.jpg" alt="Członkowie Type O Negative w fioletowym świetle" loading="lazy" class="w-full h-full object-cover grayscale">
+                    <img src="/img/zespol/04.jpg" width="732" height="743" alt="Członkowie Type O Negative w fioletowym świetle" loading="lazy" decoding="async" class="w-full h-full object-cover grayscale">
                 </a>
                 <a href="/img/zespol/05.jpg" class="aspect-square bg-ton-gray border border-ton-green/30 hover:border-ton-green transition cursor-pointer overflow-hidden">
-                    <img src="/img/zespol/05.jpg" alt="Plakat promocyjny albumu World Coming Down" loading="lazy" class="w-full h-full object-cover grayscale">
+                    <img src="/img/zespol/05.jpg" width="540" height="725" alt="Plakat promocyjny albumu World Coming Down" loading="lazy" decoding="async" class="w-full h-full object-cover grayscale">
                 </a>
                 <a href="/img/zespol/06.jpg" class="aspect-square bg-ton-gray border border-ton-green/30 hover:border-ton-green transition cursor-pointer overflow-hidden">
-                    <img src="/img/zespol/06.jpg" alt="Grupowe zdjęcie Type O Negative" loading="lazy" class="w-full h-full object-cover grayscale">
+                    <img src="/img/zespol/06.jpg" width="736" height="981" alt="Grupowe zdjęcie Type O Negative" loading="lazy" decoding="async" class="w-full h-full object-cover grayscale">
                 </a>
             </div>
         </section>
@@ -130,7 +134,7 @@
     <footer class="bg-black border-t-2 border-ton-green p-8 mt-12">
         <div class="container mx-auto text-center">
             <p class="text-ton-green font-gothic mb-2">TYPE O NEGATIVE - STAY NEGATIVE</p>
-            <p class="text-sm text-gray-500">
+            <p class="text-sm text-gray-400">
                 Cold. Green. Eternal. Type O Negative — Peter Steele Site crafted by <a href="https://strony.olsztyn.pl" class="hover:text-ton-green underline transition">Piotr G.</a>
             </p>
         </div>
