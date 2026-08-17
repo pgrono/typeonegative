@@ -68,4 +68,37 @@
   .bg-vignette {
     background: radial-gradient(circle, rgba(27,77,62,0.2) 0%, rgba(10,10,10,1) 80%);
   }
+
+  /* Menu mobilne — panel wysuwany z prawej krawędzi ekranu. */
+  .nav-drawer {
+    transform: translateX(100%);
+    visibility: hidden;
+    transition: transform 300ms ease, visibility 0s linear 300ms;
+  }
+  .nav-drawer.is-open {
+    transform: translateX(0);
+    visibility: visible;
+    transition: transform 300ms ease, visibility 0s;
+  }
+  .nav-overlay {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 300ms ease, visibility 0s linear 300ms;
+  }
+  .nav-overlay.is-open {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 300ms ease, visibility 0s;
+  }
+  /* Blokada przewijania tła przy otwartym panelu. */
+  .nav-lock {
+    overflow: hidden;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .nav-drawer,
+    .nav-overlay {
+      transition: none;
+    }
+  }
 }
