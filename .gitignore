@@ -19,3 +19,6 @@ dist/
 
 # Wygenerowane style (opcjonalnie, jeśli budujesz je na Cloudflare)
 # css/style.css
+
+# Instrukcje dla agentów AI (lokalnie, poza repo)
+AGENTS.md
